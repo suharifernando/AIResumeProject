@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-900 text-slate-50; }
+.bg-main-gradient { background: radial-gradient(circle at top left, #1e293b, #0f172a); }
+.btn-primary { @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer; }
+.btn-secondary { @apply bg-slate-700 hover:bg-slate-600 text-white font-medium py-2 px-6 rounded-full transition-colors; }
+.upload-area { @apply border-2 border-dashed border-slate-700 rounded-3xl p-10 bg-slate-800/50 hover:bg-slate-800/80 transition-all; }
+.upload-zone { @apply flex flex-col items-center justify-center text-center h-64; }
+.file-info-card, .section-card, .score-card { @apply bg-slate-800/80 backdrop-blur-md border border-slate-700 rounded-2xl p-6 shadow-xl; }
+.feature-card-green { @apply bg-green-900/10 border border-green-500/20 rounded-xl p-6 hover:border-green-500/40 transition-colors; }
+.feature-card-orange { @apply bg-orange-900/10 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500/40 transition-colors; }
+.icon-container { @apply w-10 h-10 rounded-lg flex items-center justify-center; }
+.icon-container-lg { @apply w-14 h-14 rounded-full flex items-center justify-center; }
+.icon-container-xl { @apply w-16 h-16 rounded-2xl flex items-center justify-center bg-slate-700 border border-slate-600; }
+.loading-spinner { @apply w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mx-auto; }
+.keyword-tag { @apply px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30; }
+.score-status-excellent { @apply bg-green-500/20 text-green-300 border border-green-500/30; }
+.score-status-good { @apply bg-yellow-500/20 text-yellow-300 border border-yellow-500/30; }
+.score-status-improvement { @apply bg-red-500/20 text-red-300 border border-red-500/30; }
+.progress-bar { @apply h-3 bg-slate-700 rounded-full mt-4 overflow-hidden; }
+.progress-excellent { @apply bg-gradient-to-r from-green-400 to-emerald-500; }
+.progress-good { @apply bg-gradient-to-r from-yellow-400 to-orange-500; }
+.progress-improvement { @apply bg-gradient-to-r from-red-400 to-rose-500; }
+.progress-bar-small { @apply h-2 bg-slate-700 rounded-full overflow-hidden; }
